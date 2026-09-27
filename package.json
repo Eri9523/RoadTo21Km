@@ -1,0 +1,10 @@
+{
+  "name": "roadto21km",
+  "private": true,
+  "workspaces": ["apps/web"],
+  "scripts": {
+    "dev:web": "npm run dev --workspace @roadto21km/web",
+    "build:web": "npm run build --workspace @roadto21km/web",
+    "lint:web": "npm run lint --workspace @roadto21km/web"
+  }
+}
