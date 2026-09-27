@@ -2,6 +2,8 @@
 
 Monorepo for the RoadTo21Km web app and Python backend.
 
+Start with the [product specifications](specs/README.md) before making changes.
+
 ## Development
 
 - Web: `npm install` then `npm run dev:web`
