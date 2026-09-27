@@ -8,6 +8,7 @@ These specifications are the starting point for work on RoadTo21Km. Read them be
 | [domain.md](domain.md) | Class model, units, and data boundaries |
 | [training-plan.md](training-plan.md) | Planning rules and structured output |
 | [data-sources.md](data-sources.md) | Training data provider and integration constraints |
+| [backend.md](backend.md) | Backend dependency wiring and application boundaries |
 
 ## Working agreement
 

@@ -5,7 +5,7 @@ from __future__ import annotations
 from collections.abc import Callable
 from typing import Any
 
-from injector import Injector, singleton
+from injector import Injector, inject, singleton
 
 _service_registry: dict[type, type] = {}
 
@@ -22,8 +22,12 @@ def service(protocol: type) -> Callable[[type], type]:
 
 def build_injector() -> Injector:
     """Build an Injector with all registered service implementations."""
+    import services  # noqa: F401 — trigger @service registration
 
     def configure(binder: Any) -> None:
+        from .settings import Settings
+
+        binder.bind(Settings, to=Settings(), scope=singleton)
         for protocol, implementation in _service_registry.items():
             binder.bind(protocol, to=implementation, scope=singleton)
 

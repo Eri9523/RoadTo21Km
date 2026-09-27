@@ -3,7 +3,7 @@ name = "roadto21km-backend"
 version = "0.1.0"
 description = "RoadTo21Km backend"
 requires-python = ">=3.13"
-dependencies = ["injector>=0.24.0"]
+dependencies = ["injector>=0.24.0", "pydantic-settings>=2.0.0"]
 
 [build-system]
 requires = ["hatchling"]
