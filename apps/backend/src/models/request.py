@@ -50,3 +50,10 @@ class PlanRequest(BaseModel):
     goal: RaceGoal
     constraints: RunnerConstraints
     as_of_date: date
+
+
+class ReportedTrainingBaseline(BaseModel):
+    usual_runs_per_week: float = Field(ge=0, le=7, allow_inf_nan=False)
+    approx_weekly_running_distance_m: int = Field(ge=0)
+    recent_longest_run_m: int | None = Field(default=None, ge=0)
+    last_run_date: date | None = None

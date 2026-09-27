@@ -17,4 +17,4 @@ These specifications are the starting point for work on RoadTo21Km. Read them be
 3. Keep source-specific fields out of the domain model and model-generated fields out of measured history.
 4. Keep specifications in English. Keep personal activity data, tokens, and API keys out of the repository.
 
-The first usable slice uses synthetic running history and a deterministic example plan. A real data source or model call is a later, separately verified slice. See [data-sources.md](data-sources.md) before adding either.
+The first usable slice uses a manually reported four-week running baseline and a deterministic plan. Synthetic activities are for tests and demonstrations; a connected data source or live model call is a later, separately verified slice. See [data-sources.md](data-sources.md) before adding either.
